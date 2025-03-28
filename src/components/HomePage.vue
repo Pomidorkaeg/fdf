@@ -5,15 +5,15 @@
     </div>
     
     <div class="buttons-container">
-      <button class="main-button" @click="goToTournamentTable">
+      <router-link to="/tournament" class="main-button">
         <span class="button-icon">🏆</span>
         Турнирная таблица
-      </button>
+      </router-link>
       
-      <button class="main-button" @click="goToMatches">
+      <router-link to="/matches" class="main-button">
         <span class="button-icon">⚽</span>
         Матчи
-      </button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -73,6 +73,7 @@ const goToMatches = () => {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-decoration: none;
 }
 
 .main-button:hover {

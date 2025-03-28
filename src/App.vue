@@ -1,10 +1,6 @@
 <template>
-  <HomePage />
+  <router-view />
 </template>
-
-<script setup>
-import HomePage from './components/HomePage.vue'
-</script>
 
 <style>
 * {
@@ -16,5 +12,6 @@ import HomePage from './components/HomePage.vue'
 
 body {
   min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
 }
 </style> 
